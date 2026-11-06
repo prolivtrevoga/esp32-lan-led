@@ -14,9 +14,14 @@ python3 -m venv .venv
 ```
 ---
 ### на esp32
-**на esp должен быть установлен MicroPython**
+**на плате должен быть установлен MicroPython**
 
 открыть терминал, выполнить
+```shell
+nano main.py
+```
+заполнить переменные SSID, пароль wifi, api(узнать свой ip можно через ip a)
+
 ```shell
 sudo apt update && sudo apt upgrade -y
 sudo apt install pipx
@@ -28,4 +33,4 @@ pipx install mpremote
 
 mpremote cp main.py :main.py
 ```
-нажать кнопку перезагрузки на плате
+перезагрузить esp32
